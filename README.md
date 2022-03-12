@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# PR3SENT - E-COMMERCE WEBSITE
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This has the homepage running for the website
 
-## Available Scripts
 
-In the project directory, you can run:
+## Setting Up
+First make sure Git and Node is installed in your system, if not download from below:
+</br>
+* [Git](https://git-scm.com/download/win)
+* [Node](https://nodejs.org/en/download/)
 
-### `yarn start`
+Once you have them both installed,Follow the steps below: 
+* create the folder where you want to start working on the project
+* open the folder in VSCODE or any other Text-editor
+* Type in the following commands in the terminal one-by-one ie the command prompt present inside VSCODE, it will be present in the bottom, from where you can swipe it up.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
+git init
+git clone https://github.com/theTeam8/Gift-Website.git .
+```
+* When that is done, type this in the terminal, this will install the node_modules folder in your project
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```
+npm install
+```
+* After this is over, type this to start the local server to view the website, it will open up the website in your browser.
+```
+npm start
+```
+*That covered setting the website up, now if you want to start making changes do the following,*
 
-### `yarn test`
+## Changes
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Now make any changes you want and make sure the main repo is forked into your account in github, after this you have to push it into Github for others to view, for that follow the following,
 
-### `yarn build`
+* In the terminal execute these one by one,this will upload all the new changes into your github: 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+git add .
+git commit -m "title about the change"
+git push https://github.com/{your username}/Gift-Website.git
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

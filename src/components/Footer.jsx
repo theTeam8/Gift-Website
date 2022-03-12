@@ -2,6 +2,7 @@ import {
   Facebook,
   Instagram,
   MailOutline,
+  GitHub,
   Phone,
   Pinterest,
   Room,
@@ -12,6 +13,8 @@ import { mobile } from "../responsive";
 
 const Container = styled.div`
   display: flex;
+  background-color: #022c5e;
+  color: white;
   ${mobile({ flexDirection: "column" })}
 `;
 
@@ -80,19 +83,14 @@ const ContactItem = styled.div`
   align-items: center;
 `;
 
-const Payment = styled.img`
-    width: 50%;
-`;
 
 const Footer = () => {
   return (
     <Container>
       <Left>
-        <Logo>LAMA.</Logo>
+        <Logo>PR3SENT.</Logo>
         <Desc>
-          There are many variations of passages of Lorem Ipsum available, but
-          the majority have suffered alteration in some form, by injected
-          humour, or randomised words which don’t look even slightly believable.
+          We bring together customers, designers and sellers into one roof!
         </Desc>
         <SocialContainer>
           <SocialIcon color="3B5999">
@@ -110,32 +108,34 @@ const Footer = () => {
         </SocialContainer>
       </Left>
       <Center>
-        <Title>Useful Links</Title>
+        <Title>Links</Title>
         <List>
           <ListItem>Home</ListItem>
           <ListItem>Cart</ListItem>
-          <ListItem>Man Fashion</ListItem>
-          <ListItem>Woman Fashion</ListItem>
+          <ListItem>Men's Fashion</ListItem>
+          <ListItem>Women's Fashion</ListItem>
           <ListItem>Accessories</ListItem>
+          <ListItem>Design Feed</ListItem>
           <ListItem>My Account</ListItem>
           <ListItem>Order Tracking</ListItem>
           <ListItem>Wishlist</ListItem>
-          <ListItem>Wishlist</ListItem>
-          <ListItem>Terms</ListItem>
+          <ListItem>Terms and Conditions</ListItem>
         </List>
       </Center>
       <Right>
         <Title>Contact</Title>
         <ContactItem>
-          <Room style={{marginRight:"10px"}}/> 622 Dixie Path , South Tobinchester 98336
+          <Room style={{marginRight:"10px"}}/> ABC Street, VITC
         </ContactItem>
         <ContactItem>
-          <Phone style={{marginRight:"10px"}}/> +1 234 56 78
+          <Phone style={{marginRight:"10px"}}/> +91 234 56 78
         </ContactItem>
         <ContactItem>
-          <MailOutline style={{marginRight:"10px"}} /> contact@lama.dev
+          <MailOutline style={{marginRight:"10px"}} /> team8Present@outlook.com
         </ContactItem>
-        <Payment src="https://i.ibb.co/Qfvn4z6/payment.png" />
+        <ContactItem>
+          <GitHub style={{marginRight:"10px"}} /> theTeam8
+        </ContactItem>
       </Right>
     </Container>
   );

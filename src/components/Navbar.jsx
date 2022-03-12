@@ -6,6 +6,8 @@ import { mobile } from "../responsive";
 
 const Container = styled.div`
   height: 60px;
+  background-color: #d881b4;
+  color: white;
   ${mobile({ height: "50px" })}
 `;
 
@@ -39,6 +41,8 @@ const SearchContainer = styled.div`
 
 const Input = styled.input`
   border: none;
+  width: 20vw;
+  height: 3vh;
   ${mobile({ width: "50px" })}
 `;
 
@@ -74,14 +78,15 @@ const Navbar = () => {
           <Language>EN</Language>
           <SearchContainer>
             <Input placeholder="Search" />
-            <Search style={{ color: "gray", fontSize: 16 }} />
+            <Search style={{ color: "white", fontSize: 20 }} />
           </SearchContainer>
         </Left>
         <Center>
-          <Logo>LAMA.</Logo>
+          <Logo>PR3SENT</Logo>
         </Center>
         <Right>
-          <MenuItem>REGISTER</MenuItem>
+          <MenuItem>DESIGNS</MenuItem>
+          <MenuItem>LOG IN</MenuItem>
           <MenuItem>SIGN IN</MenuItem>
           <MenuItem>
             <Badge badgeContent={4} color="primary">
